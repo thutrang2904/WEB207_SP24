@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .round-image {
+          border-radius: 50%;
+        }
+        .pagination{
+            text-align: center;
+        }
+      </style>
+    <title>Bài tập_Lab1</title>
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+         <img src="https://cdn-new.topcv.vn/unsafe/140x/filters:format(webp)/https://static.topcv.vn/company_logos/N0yqyTYJJxlce2Sb0s3WzIREVmycF2hq_1694482484____4500e4dce375fcc0504808f0c3053f87.png" alt="">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container-fluid bg-secondary-subtle">
+        <h3>CONTACTS</h3>
+        <div class="alert alert-light" role="alert">
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">+ Add contacts</button>
+          </div>
+            <br>
+        <!-- Table -->
+        <table class="table table-hover">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://cdn-hnoap.nitrocdn.com/yvoOcqazkOINslaCBLQcikBWDrvVbqJc/assets/images/optimized/rev-934cbae/xinhflowers.com/wp-content/uploads/2023/08/20-hinh-anh-hoa-tulip-lam-hinh-nen-cuc-xinh-8.png" alt="Ảnh tròn" class="round-image" width="60" height="60">
+                        Michael Morris
+                    </td>
+                    <td>michaelmorris@velzon.com</td>
+                    <td>
+                        <span class="badge text-danger bg-primary-subtle">Lead</span>
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn"> <i class="bi bi-eye-fill"></i> View</button>
+                            <button type="button" class="btn"> <i class="bi bi-pencil-fill"></i> Edit </button>
+                            <button type="button" class="btn"> <i class="bi bi-trash3-fill"></i> Delete </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://png.pngtree.com/png-clipart/20190905/original/pngtree-student-playing-cartoon-illustration-png-image_4513517.jpg" alt="Ảnh tròn" class="round-image" width="60" height="60">
+                        Kevin Dawson
+                    </td>
+                    <td>kevindawson@velzon.com</td>
+                    <td>
+                        <span class="badge text-danger bg-primary-subtle">Lead</span>
+                        <span class="badge text-danger bg-primary-subtle">Exiting</span>
+                        <span class="badge text-danger bg-primary-subtle">Partner</span>
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn"> <i class="bi bi-eye-fill"></i> View</button>
+                            <button type="button" class="btn"> <i class="bi bi-pencil-fill"></i> Edit </button>
+                            <button type="button" class="btn"> <i class="bi bi-trash3-fill"></i> Delete </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://bizweb.dktcdn.net/100/438/408/files/hinh-nen-hoa-tulip-yody-vn-44.jpg?v=1684982745126" alt="Ảnh tròn" class="round-image" width="60" height="60">
+                        James Price
+                    </td>
+                    <td>jamesprice@velzon.com</td>
+                    <td>
+                        <span class="badge text-info bg-primary-subtle">Partner</span>
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn"> <i class="bi bi-eye-fill"></i> View</button>
+                            <button type="button" class="btn"> <i class="bi bi-pencil-fill"></i> Edit </button>
+                            <button type="button" class="btn"> <i class="bi bi-trash3-fill"></i> Delete </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Bai3_Lab2</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-update-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+                    type="button" role="tab" aria-controls="nav-update" aria-selected="true"><i
+                        class="bi bi-pencil-square me-2"></i>CẬP NHẬT</button>
+                <button class="nav-link" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                    role="tab" aria-controls="nav-list" aria-selected="false"><i class="bi bi-list-task me-2"></i>DANH SÁCH</button>
+            </div>
+        </nav>
+
+          <!-- Tab -->
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-update-tab" tabindex="0">
+                <div class="card">
+                    <div class="card-header">
+                        <h3> <i class="bi bi-slash-square"> NHẬP LƯƠNG THÁNG 12 </i></h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="form-group col-4">
+                                    <label for="inputMaNV" class="form-label">Mã nhân viên</label>
+                                    <input type="text" class="form-control" id="inputMaNV">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="inputName" class="form-label">Họ và tên</label>
+                                    <input type="text" class="form-control" id="inputName">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="inputCLB" class="form-label">Câu lạc bộ</label>
+                                    <select id="inputCLB" class="form-select">
+                                        <option selected> Đà Nẵng</option>
+                                        <option value="1">Hồ Chí Minh</option>
+                                        <option value="2">Nha Trang</option>
+                                        <option value="3">Ninh Bình</option>
+                                        <option value="4">Hà Giang</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="form-group col-4">
+                                    <label for="inputLuong" class="form-label">Lương</label>
+                                    <input type="text" class="form-control" id="inputLuong">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="inputThuong" class="form-label">Thưởng</label>
+                                    <input type="text" class="form-control" id="inputThuong">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="inputPC" class="form-label">Phụ cấp</label>
+                                    <input type="text" class="form-control" id="inputPC">
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Note" class="form-label">Ghi chú</label>
+                                    <textarea class="form-control" id="Note" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <i class="bi bi-arrow-down-square-fill"> Lưu </i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark">
+                                        <i class="bi bi-square-fill"> Hủy </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        Vui lòng nhập thông tin cầu thủ
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-list-tab" tabindex="0">
+                    <div class="card">
+                        <div class="card-header"> 
+                            <h3> <i class="bi bi-list-task"> BẢNG LƯƠNG THÁNG 12 </i> </h3>  
+                        </div>
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr class="text-center table-warning">
+                                    <th rowspan="2" class="align-middle"> MÃ NV</th>
+                                    <th rowspan="2" class="align-middle"> HỌ VÀ TÊN </th>
+                                    <th colspan="3" class="align-middle"> THU NHẬP </th>
+                                </tr>
+                                <tr class="text-center table-warning">
+                                    <th class="align-middle"> LƯƠNG </th>
+                                    <th class="align-middle"> THƯỞNG </th>
+                                    <th class="align-middle"> PHỤ CẤP </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NV100</td>
+                                    <td>Nguyễn Công Phượng</td>
+                                    <td>5.000.000</td>
+                                    <td>500.000</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>NV102</td>
+                                    <td>Phan Văn Tài Em</td>
+                                    <td>9.000.000</td>
+                                    <td>600.000</td>
+                                    <td>100.000</td>
+                                </tr>
+                                <tr>
+                                    <td>NV103</td>
+                                    <td>Lê Huỳnh Đức</td>
+                                    <td>7.000.000</td>
+                                    <td>3.000.000</td>
+                                    <td>200.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-footer">
+                            Lương của cầu thủ và huấn luyện viên chuyên nghiệp
+                        </div>
+                    </div>
+                <div>
+                </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

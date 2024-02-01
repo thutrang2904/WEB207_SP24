@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>Phiếu đăng ký học</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <img src="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/Banner.png" alt=""
+                width="1300" height="500">
+        </div>
+        <div class="text-center my-10">
+            <h1>PHIẾU ĐĂNG KÝ HỌC</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5>THÔNG TIN THÍ SINH</h5>
+                <div class="row">
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                            <label for="input" class="form-label">Họ và tên</label>
+                            <input type="hoTen" class="form-control" id="input" placeholder="Họ và tên">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                            <label for="input" class="form-label">Ngày sinh</label>
+                            <input type="ngaySinh" class="form-control" id="input" placeholder="DD/MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <label for="input" class="form-label">Giới tính</label>
+                        <select id="input" class="form-select">
+                            <option selected>Nam</option>
+                            <option selected>Nữ</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-3">
+                            <label for="input" class="form-label">Dân tộc</label>
+                            <input type="danToc" class="form-control" id="input" placeholder="Kinh">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-sm-6">
+                        <div class="">
+                            <label for="input" class="form-label">Số CCCD/Chứng minh nhân dân</label>
+                            <input type="CCCD" class="form-control" id="input" placeholder="0123456789">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-6">
+                        <div class="">
+                            <label for="input" class="form-label">Ngày cấp</label>
+                            <input type="ngayCap" class="form-control" id="input" placeholder="DD/MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-6">
+                        <div class="">
+                            <label for="input" class="form-label">Nơi cấp</label>
+                            <input type="noiCap" class="form-control" id="input" placeholder="Hà Nội, Hồ Chí Minh">
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <h6>Nơi thường trú(Điền thông tin đầy đủ như trong CMND/CCCD)</h6>
+                <br>
+                <div class="row">
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <select class="form-select" aria-label="Chon tinh">
+                            <option selected>Chọn tỉnh/thành phố</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Đà Nẵng</option>
+                            <option value="3">Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <select class="form-select" aria-label="Chon quan">
+                            <option selected>Quận/Huyện</option>
+                            <option value="1">Thạch Thất</option>
+                            <option value="2">Quốc Oai</option>
+                            <option value="3">Cầu Giấy</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <select class="form-select" aria-label="Chon xa">
+                            <option selected>Xã/Phường/Thị trấn</option>
+                            <option value="1">Thạch Hòa</option>
+                            <option value="2">Bình Yên</option>
+                            <option value="3">Hạ Bằng</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-4">
+                            <input type="sonha" class="form-control" id="input" placeholder="Số nhà, đường, ngõ, xóm">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-4">
+                            <label for="input" class="form-label">Số điện thoại thí sinh</label>
+                            <input type="text" class="form-control" id="input" placeholder="012345678">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-4">
+                            <label for="input" class="form-label">Email thí sinh</label>
+                            <input type="text" class="form-control" id="input" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-4">
+                            <label for="input" class="form-label">Họ tên phụ huynh/ người bảo trợ</label>
+                            <input type="text" class="form-control" id="input" placeholder="Họ và tên">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-sm-6">
+                        <div class="mb-4">
+                            <label for="input" class="form-label">Số điện thoại phụ huynh/ người bảo trợ</label>
+                            <input type="text" class="form-control" id="input" placeholder="012345678">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5> THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-2">
+                                <label for="input" class="form-label">Cở sở nhập học</label>
+                                <select class="form-select" aria-label="">
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Hải Phòng</option>
+                                    <option value="3">Hà Nam</option>
+                                    <option value="4"> Thanh Hóa</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="row">
+                            <label for="input" class="form-label">Nguyện vọng thứ nhất</label>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <div class="mb-4">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>Chuyên ngành</option>
+                                        <option value="1">Phát triển phần mềm</option>
+                                        <option value="2">Digital Marketing</option>
+                                        <option value="3">Ứng dụng phần mềm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <div class="mb-4">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>Ngành</option>
+                                        <option value="1">Công nghệ thông tin</option>
+                                        <option value="2">Quản trị kinh doanh</option>
+                                        <option value="3">Ngành khác</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="input" class="form-label">Nguyện vọng thứ hai</label>
+                            <div class="col-12 col-md-3 col-sm-6">
+                                <div class="mb-4">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>Chuyên ngành</option>
+                                        <option value="1">Phát triển phần mềm</option>
+                                        <option value="2">Digital Marketing</option>
+                                        <option value="3">Ứng dụng phần mềm</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="mb-4">
+                                <select class="form-select" aria-label="">
+                                    <option selected>Ngành</option>
+                                    <option value="1">Công nghệ thông tin</option>
+                                    <option value="2">Quản trị kinh doanh</option>
+                                    <option value="3">Ngành khác</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-sm-6">
+                            <p> Nơi tốt nghiệp THPT hoặc tương đương</p>
+                            <div class="mb-6">
+                                <select class="form-select" aria-label="">
+                                    <option value="1">2023</option>
+                                    <option value="2">2022</option>
+                                    <option value="3">2021</option>
+                                    <option value="4">2024</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-sm-6">
+                            <p> Trường tốt nghiệp THPT hoặc tương đương</p>
+                            <div class="mb-6">
+                                <input type="text" class="form-control" id="input" placeholder="Trường">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <p>Nơi tốt nghiệp</p>
+                        <div class="col-12 col-md-4 col-sm-6">
+                            <div>
+                                <select class="form-select" aria-label="">
+                                    <option selected>Chọn tỉnh/thành phố</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Hà Nam</option>
+                                    <option value="3">Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-6">
+                            <select class="form-select" aria-label="">
+                                <option selected>Quận/Huyện</option>
+                                <option value="1">Hai Bà Trưng</option>
+                                <option value="2">Hoài Đức</option>
+                                <option value="3">Cầu Giấy</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-6">
+                            <select class="form-select" aria-label="">
+                                <option selected>Phường/Xã/Thị trấn</option>
+                                <option value="1">Đan Phượng</option>
+                                <option value="2">Hoài Đức</option>
+                                <option value="3">Cầu Giấy</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div>
+                        <h5>THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ</h5>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Địa chỉ nhận</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Địa chỉ thường trú
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Khác
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p>Người nhận</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Thí sinh
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Phụ huynh/ Người bảo trợ
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <div>
+                        <h5>TẢI LÊN GIẤY TỜ XÁC THỰC</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="inputCCCD" class="form-label">Ảnh CMND/CCCD mặt trước</label>
+                                    <p class="textsm">(bắt buộc)</p>
+                                    <img src="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/cccd-mt.png"
+                                        class="rounded-0" alt="" width="250">
+                                    <div class="input-group mb-3 mt-2">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <label for="inputImageCCCD" class="form-label">Ảnh CMND/CCCD mặt sau</label>
+                                    <p class="textsm">(bắt buộc)</p>
+                                    <img src="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/cccd-ms.png"
+                                        class="rounded-0" alt="" width="250">
+                                    <div class="input-group mb-3 mt-2">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputImageCCCD" class="form-label">Ảnh CMND/CCCD mặt sau</label>
+                                    <p class="textsm">
+                                        Hoặc giấy chứng nhận tốt nghiệp tạm thời (không bắt buộc)</p>
+                                    <img src="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/bang-tot-nghiep-thpt.png"
+                                        class="bTNghiep rounded-0" alt="" width="450">
+                                    <div class="input-group mb-3 mt-2">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Tôi xin cam đoan những lời khai của tôi trên phiếu này là đúng sự thật.
+                            Nếu sai tôi hoàn toàn chịu trách nhiệm và nhận xử lý theo Quy chế tuyển sinh cao đẳng hiện
+                            hành
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Tôi đã đọc kỹ và cam kết tuân thủ Quy định tài chính của nhà trường
+                        </label>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-dark">GỬI HỒ SƠ ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

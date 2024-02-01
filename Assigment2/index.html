@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="KhoaHoc">
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Giới thiệu</a>
+                    <a class="nav-link" href="#!/lien-he">Liên hệ</a>
+                    <a class="nav-link" href="#!/dang-ky">Đăng ký học</a>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <main class="container">
+        <div ng-view></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./libs/angular.min.js"></script>
+    <script src="./libs/angular-route.min.js"></script>
+    <script src="./controller/GioiThieuController.js"></script>
+    <script src="./controller/LienHeController.js"></script>
+    <script src="./controller/DangKyController.js"></script>
+</body>
+<script>
+    let khoahoc = angular.module('KhoaHoc', ['ngRoute']);
+    khoahoc.controller('khController', function($scope){
+        $scope.khArr = [
+            {
+                lopHoc : "N5.652",
+                thoiGian : " 18:30 - 21:00",
+                ngayKG : " 20/04/2023",
+                coSo : "Hà Đông"
+            },
+            {
+                lopHoc : "N5.654",
+                thoiGian : " 18:30 - 21:00",
+                ngayKG : " 10/11/2023",
+                coSo : " Đống Đa "
+            },
+            {
+                lopHoc : "N5.551",
+                thoiGian : " 18:30 - 21:00",
+                ngayKG : " 18/07/2024",
+                coSo : " Quận 1"
+            },
+            {
+                lopHoc : " N4.545",
+                thoiGian : " 18:30 - 21:00",
+                ngayKG : " 15/12/2023",
+                coSo : "Cầu Giấy"
+            },
+            {
+                lopHoc : "N3.471LĐ",
+                thoiGian : " 18:30 - 21:00",
+                ngayKG : "18/07/2024",
+                coSo : "Cầu Giấy"
+            }
+        ];
+    });
+    khoahoc.config(function($routeProvider){
+        $routeProvider
+        .when(
+            '/gioi-thieu',
+            {
+                templateUrl: 'view/GioiThieu.html',
+                controller: GioiThieuController
+            }
+        )
+        .when(
+            '/lien-he',
+            {
+                templateUrl: 'view/LienHe.html',
+                controller: LienHeController
+            }
+        )
+        .when(
+            '/dang-ky',
+            {
+                templateUrl: 'view/DangKy.html',
+                controller: DangKyController
+            }
+        )
+        .otherwise({
+            redirectTo: '/gioi-thieu'
+        })
+    });
+</script>
+</html>

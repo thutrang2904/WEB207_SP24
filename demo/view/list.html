@@ -1,0 +1,45 @@
+<h1>{{title}}</h1>
+
+<!-- <table class="table">
+    <thead>
+        <th> ID</th>
+        <th> Họ tên</th>
+        <th> Mã sinh viên</th>
+        <th> Giới tính</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in svArr track by $index">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ item.hoTen }}</td>
+            <td>{{ item.maSV }}</td>
+            <td>{{ item.gioiTinh }}</td>
+        </tr>
+    </tbody>
+</table> -->
+<a href="#!/add">
+    <button type="submit" href="" class="btn btn-outline-success">Thêm sinh viên</button>
+</a>
+<table class="table table-stripped tbale-hover">
+    <thead>
+        <th> ID </th>
+        <th> Họ tên </th>
+        <th> Email </th>
+        <th> Ngày sinh </th>
+        <th> Thao tác </th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in listStudent track by $index">
+            <td>{{ item.id }}</td>
+            <td>{{ item.hoTen }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.ngaySinh | date : 'dd/MM/yyyy' }}</td>
+            <td>
+                <a href="#!/detail/{{item.id}}">
+                    <button class="btn btn-warning">Xem chi tiet</button>
+                </a>
+                
+                <button ng-click="deleteStudent(item.id)" class="btn btn-danger">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

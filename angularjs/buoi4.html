@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    Để khởi tạo 1 chương trình,
+    cần định nghĩa vùng sử dụng AngularJS
+    ng-app: dùng để định nghĩa vùng sử dụng AngularJS
+ -->
+
+<body ng-app="ThuTrang">
+    <div ng-controller="myController">
+        <h1>
+            {{ xinchao}} 
+        </h1>
+        <h1 ng-bind="xinchao"></h1> 
+    </div>
+
+    <div ng-controller="nymController">
+        <h1>{{ hoTen }}</h1>
+        <h1>{{ diaChi }}</h1>
+        <h1>{{ sdt }}</h1>
+        <h1>{{ ngayChiaTay }}</h1>
+
+
+        <h2>{{ nymArr }}</h2>
+        <h2> Danh sách người yêu mới </h2>
+        <table border="1">
+            <thead>
+                <th> STT</th>
+                <th> Họ tên</th>
+                <th> Địa chỉ</th>
+                <th> Số điện thoại</th>
+                <th> Ngày chia tay</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in nymArr track by $index">
+                    <!-- track by index: tăng thứ tự 
+                        index: bắt đầu từ 0
+                        inex +1: bắt đầu từ 1
+                        -->
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ item.hoTen }}</td>
+                    <td>{{ item.diaChi }}</td>
+                    <td>{{ item.sdt }}</td>
+                    <td>{{ item.ngayChiaTay }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- Nhúng thư viên Angularjs -->
+    <!-- <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script> -->
+    <script src="./libs/angular.min.js"></script>
+    <script src="./js/buoi4.js"></script>
+</body>
+</html>

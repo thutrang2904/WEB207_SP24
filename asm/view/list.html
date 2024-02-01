@@ -1,0 +1,33 @@
+<h1> {{title}}</h1>
+<table class="table table-stripped tbale-hover">
+    <thead>
+        <th> ID </th>
+        <th> Họ tên </th>
+        <th> Email </th>
+        <th> Số điện thoại </th>
+        <th> Ngày sinh </th>
+        <th> Số CMT/CCCD</th>
+        <th> Khóa học</th>
+        <th> Thao tác </th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in list  track by $index">
+            <td> {{ item.id }}</td>
+            <td> {{ item.hoTen }}</td>
+            <td> {{ item.email }}</td>
+            <td> {{ item.sdt }}</td>
+            <td> {{ item.ngaySinh | date : 'dd/MM/yyyy' }}</td>
+            <td> {{ item.cccd }}</td>
+            <td> {{item.khoaHoc == 1 ? "N1" : (item.khoaHoc == 2 ? "N2" : (item.khoaHoc == 3 ? "N3" : (item.khoaHoc == 4 ? "N4" : "N5")))}}</td>
+            <td>
+                <a href="#!/detail/{{item.id}}">
+                    <button class="btn btn-warning"> Xem chi tiết </button>
+                </a>
+                <button ng-click="delete(item.id)" class="btn btn-danger"> Xóa thông tin </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="#!/dang-ky">
+    <button type="submit" href="" class="btn btn-outline-success"> Thêm mới </button>
+</a>

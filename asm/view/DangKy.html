@@ -1,0 +1,56 @@
+<div class="card my-3">
+    <h5 class="card-header"> {{title}}</h5>
+    <div class="card-body">
+        <form ng-submit="createHocVien()">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="" class="form-label"> Họ và tên </label>
+                    <input type="text" class="form-control" placeholder="Nguyễn Văn A" ng-model="create.hoTen">
+                    <p ng-if="kiemTra.hoTen" class="text-danger"> Vui lòng nhập họ tên!</p>
+                </div>
+
+                <div class="form-group col-6">
+                    <label for="" class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="@gmail.com" ng-model="create.email">
+                    <p ng-if="kiemTra.email" class="text-danger"> Vui lòng nhập lại email!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="" class="form-label">Số điện thoại</label>
+                    <input type="text" class="form-control" placeholder="0123456789" ng-model="create.sdt">
+                    <p ng-if="kiemTra.sdt" class="text-danger"> Vui lòng nhập lại số điện thoại!</p>
+                </div>
+
+                <div class="form-group col-6">
+                    <label for="" class="form-label">Ngày sinh</label>
+                    <input type="date" class="form-control" placeholder="dd/MM/yyyy" ng-model="create.ngaySinh">
+                    <p ng-if="kiemTra.ngaySinh" class="text-danger">Vui lòng nhập ngày sinh!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="" class="form-label"> Số CMT/CCCD</label>
+                    <input type="text" class="form-control" placeholder="0123456789" ng-model="create.cccd">
+                    <p ng-if="kiemTra.cccd" class="text-danger">Vui lòng nhập lại CMT/ Căn cước công dân!</p>
+                </div>
+                <div class="form-group col-6">
+                    <label for="" class="form-label">Khóa học</label>
+                    <select class="form-select" aria-label="Default select example" ng-model="create.khoaHoc">
+                        <option selected></option>
+                        <option value="1">N1</option>
+                        <option value="2">N2</option>
+                        <option value="3">N3</option>
+                        <option value="4">N4</option>
+                        <option value="5">N5</option>
+                      </select>
+                      <p ng-if="kiemTra.khoaHoc" class="text-danger"> Vui lòng chọn khóa học! </p>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success mt-3"> THÊM HỌC VIÊN </button>
+        </form>
+    </div>
+</div>

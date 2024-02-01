@@ -1,0 +1,90 @@
+    <!-- Slider -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://riki.edu.vn/goc-chia-se/wp-content/uploads/2022/02/Sinh-nha%CC%A3%CC%82t-6T-02-1-1-1024x1024.png"
+                    class="d-block w-100" alt="..." width="200px" height="700px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://danhbaict.vn/uploads/business/product/product1618904972-167467758_113591407491721_212923131423405585_n.jpg"
+                    class="d-block w-100" alt="..." width="200px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://riki.edu.vn/goc-chia-se/wp-content/uploads/2023/09/khoa-hoc-tieng-nhat-n3-min-768x536-1.jpeg"
+                    class="d-block w-100" alt="..." height="700px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<h1 class="text-center"> LỊCH KHAI GIẢNG </h1>
+    <div class="text-center">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-info"> Khai giảng lớp N5 </button>
+            <button type="button" class="btn btn-primary"> Khai giảng lớp N4 </button>
+            <button type="button" class="btn btn-success"> Khai giảng lớp N3</button>
+        </div>
+    </div>
+    <div ng-controller="khController">
+        <table class="table">
+            <thead>
+                    <th> STT </th>
+                    <th> Lớp học </th>
+                    <th> Thời gian </th>
+                    <th> Ngày khai giảng </th>
+                    <th> Cơ sở </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in khArr track by $index">
+                    <!-- track by index: tăng thứ tự 
+                        index: bắt đầu từ 0
+                        inex +1: bắt đầu từ 1
+                        -->
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ item.lopHoc }}</td>
+                    <td>{{ item.thoiGian }}</td>
+                    <td>{{ item.ngayKG }}</td>
+                    <td>{{ item.coSo }}</td>
+            </tbody>
+        </table>
+    </div>
+    <h1 class="text-center"> TẠI SAO HỌC VIÊN CHỌN RIKI ?</h1>
+    <p class="text-center"> Riki Nihongo là trung tâm đào tạo tiếng Nhật toàn diện
+        cả 4 kỹ năng Nghe - Nói - Đọc - Viết với quy mô toàn quốc.
+        Sở hữu kinh nghiệm đào tạo hơn 20.000 học viên cùng bề dày
+        kinh nghiệm hơn 4 năm giảng dạy
+    </p>
+    <div class="alert alert-primary" role="alert">
+        10 cơ sở khắp Hà Nội và Hồ Chí Minh:
+        Giúp học viên thuận tiện di chuyển tới các trung tâm một cách dễ dàng nhất.
+    </div>
+    <div class="alert alert-info" role="alert">
+        Sáng tạo trong từng bài giảng: 
+        Giúp học viên dễ dàng tiếp thu kiến thức bài học.
+      </div>
+      <div class="alert alert-warning" role="alert">
+        100% giáo viên trình độ N2-N1:
+        Sở hữu dội ngũ giáo viên Nhật - Việt không chỉ giỏi kiến thức 
+        mà cả kĩ năng sư phạm.
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        Cam kết học lại miễn phí!
+        Riki là trung tâm đầu tiên tại Việt Nam trong việc cam kết về cả chất lượng 
+        lẫn hiệu quả trong từng khóa học.
+      </div>
+      <div class="bg-secondary p-3">
+        <p class="text-center"> <i class="bi bi-balloon-heart-fill"> Cơ sở 1: Số 8 Trần Đăng Ninh, Cầu Giấy, P.Dịch Vọng, Hà Nội</i> </p>
+        <p class="text-center"> <i class="bi bi-balloon-heart-fill"> Cơ sở 2: N78, Ngõ 54, Đường Nguyễn Khuyến, Văn Quán, Hà Đông</i> </p>
+        <p class="text-center"> <i class="bi bi-balloon-heart-fill"> Cơ sở 3: Số 32 ngõ 10 Nguyễn Văn Huyên</i> </p>
+        <p class="text-center"> <i class="bi bi-balloon-heart-fill"> Cơ sở 4: E8 ngõ 181 Nguyễn Lương Bằng, Hà Nội (Gần ngã tư Xã Đàn)</i> </p>
+    </div>

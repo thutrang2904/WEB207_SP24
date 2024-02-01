@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+
+<h2>Bài 1</h2>
+
+<form ng-submit="tinhTong()">
+    <!-- ng-submit: chỉ sử dụng được ở trong form và dùng để gửi dữ liệu -->
+    Số 1:
+    <input type="text" ng-model="inputValue.num1">
+    Số 2:
+    <input type="text" ng-model="inputValue.num2">
+    <button class="btn btn-secondary" type="submit"> Kết quả </button>
+</form>
+<h5 ng-if="ketqua">Kết quả là: {{ketqua}}</h5>
+
+<h5 ng-show="ketqua">Kết quả là: {{ ketqua }}</h5>
+
+<h2>Bài 2</h2>
+<form ng-submit="dangNhap()">
+    <label for="" class="form-label">Tên đăng nhập</label>
+    <input type="text" class="form-control" ng-model="inputValue.tenDangNhap">
+    <p ng-if="error.tenDangNhap">{{error.tenDangNhap}}</p>
+
+    <label for="" class="form-label">Mật khẩu</label>
+    <input type="text" class="form-control" ng-model="inputValue.matKhau">
+    <p ng-if="error.matKhau">{{error.matKhau}}</p>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+</form>

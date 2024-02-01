@@ -1,0 +1,64 @@
+{
+  "create": [
+    {
+      "id": "3",
+      "hoTen": "Thùy Dung",
+      "email": "thuydung2007@gmail.com",
+      "sdt": "0867224231",
+      "ngaySinh": "2007-10-26",
+      "cccd": "001304035467",
+      "khoaHoc": "N3"
+    },
+    {
+      "id": "a421",
+      "hoTen": "Phương Lan",
+      "email": "phuonglan@gmail.com",
+      "sdt": "098765432",
+      "ngaySinh": "2024-01-03T17:00:00.000Z",
+      "cccd": "098765432"
+    },
+    {
+      "hoTen": "ttttt",
+      "email": "thutrang29204@gmail.com",
+      "sdt": "0374779766",
+      "ngaySinh": "2024-01-04T17:00:00.000Z",
+      "cccd": "0987654",
+      "id": "8795"
+    },
+    {
+      "id": "38c7",
+      "hoTen": "Hoài Anh",
+      "email": "hoaianh@gmail.com",
+      "sdt": "0374779766",
+      "ngaySinh": "2024-01-04T17:00:00.000Z",
+      "cccd": "0987654321"
+    },
+    {
+      "id": "f770",
+      "hoTen": "Đình Dũng",
+      "email": "dinhdung20@gmail.com",
+      "sdt": "0989003821",
+      "ngaySinh": "2024-01-23T17:00:00.000Z",
+      "cccd": "0987654321",
+      "khoaHoc": "3"
+    },
+    {
+      "id": "0cbc",
+      "hoTen": "Lan Anh",
+      "email": "lananh12@gmail.com",
+      "sdt": "0975263627",
+      "ngaySinh": "2024-01-05T17:00:00.000Z",
+      "cccd": "098765432",
+      "khoaHoc": "2"
+    },
+    {
+      "hoTen": "",
+      "email": "abc@gmail.com",
+      "sdt": "0975637282",
+      "ngaySinh": "2024-01-03T17:00:00.000Z",
+      "cccd": "1234567890",
+      "khoaHoc": "2",
+      "id": "0db7"
+    }
+  ]
+}
