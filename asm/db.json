@@ -1,13 +1,13 @@
 {
   "create": [
     {
-      "id": "3",
       "hoTen": "Thùy Dung",
       "email": "thuydung2007@gmail.com",
-      "sdt": "0867224231",
-      "ngaySinh": "2007-10-26",
-      "cccd": "001304035467",
-      "khoaHoc": "N3"
+      "sdt": "0989003821",
+      "ngaySinh": "2007-10-26T00:00:00.000Z",
+      "cccd": "0987654321",
+      "khoaHoc": "N3",
+      "id": "3"
     },
     {
       "id": "a421",
@@ -59,6 +59,15 @@
       "cccd": "1234567890",
       "khoaHoc": "2",
       "id": "0db7"
+    },
+    {
+      "hoTen": "Nguyễn Văn Nam",
+      "email": "vannam@gmail.com",
+      "sdt": "0915964678",
+      "ngaySinh": "2024-01-27T17:00:00.000Z",
+      "cccd": "0987654321",
+      "khoaHoc": "3",
+      "id": "74f9"
     }
   ]
 }
